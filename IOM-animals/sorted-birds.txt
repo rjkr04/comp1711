@@ -1,0 +1,89 @@
+barn owl
+bittern
+black grouse
+black-throated diver
+blackbird
+blue tit
+brent goose
+canada goose
+carrion crow
+chough
+coal tit
+collared dove
+common chaffinch
+common scoter
+coot
+cormorant
+corn bunting
+corncrake
+curlew
+dunnock
+eider
+fulmar
+gadwall
+gannet
+goldcrest
+goldeneye
+goldfinch
+goosander
+great black-backed gull
+great northern diver
+great tit
+greenfinch
+grey heron
+grey partridge
+grey wagtail
+greylag goose
+hen harrier
+herring gull
+hooded crow
+house sparrow
+jackdaw
+kestrel
+little grebe
+long-tailed duck
+long-tailed tit
+magpie
+mallard
+manx shearwater
+merlin
+mute swan
+oystercatcher
+peregrine
+pheasant
+pied wagtail
+pink-footed goose
+pochard
+puffin
+quail
+raven
+razorbill
+red grouse
+red-breasted merganser
+red-legged partridge
+red-throated diver
+robin
+rook
+ruddy duck
+scaup
+shag
+shelduck
+shoveler
+slavonian grebe
+snipe
+song thrush
+sparrowhawk
+starling
+storm petrel
+swallow
+teal
+tufted duck
+velvet scoter
+water rail
+white-tailed eagle
+whooper swan
+wigeon
+willow warbler
+woodcock
+woodpigeon
+wren
