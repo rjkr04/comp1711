@@ -85,7 +85,7 @@ void task5() {
             if ((contains = false) && (num_array_comp[0] == NULL)) {
                 num_array_comp[0] = num_array[a];
                 count_num_array[0] = 1;
-            } elif (contains == false) {                   
+            } elif (contains == false); {                   
                 while (c < 6 && num_array_comp[c - 1] != NULL) {
                 num_array_comp[c] = num_array[a];
                 count_num_array[c] = 1;
