@@ -3,16 +3,6 @@
 #include <string.h>
 
 FILE *open_file(char filename[], char mode[]);
-
-typedef struct {
-	char date[11];
-	char time[6];
-	int steps;
-} FITNESS_DATA;
-
-// This is your helper function. Do not change it in any way.
-// Inputs: character array representing a row; the delimiter character
-// Ouputs: date character array; time character array; steps character array
 void tokeniseRecord(const char *input, const char *delimiter,
                     char *date, char *time, char *steps) {
     // Create a copy of the input string as strtok modifies the string
@@ -37,6 +27,16 @@ void tokeniseRecord(const char *input, const char *delimiter,
     free(inputCopy);
 
 }
+
+typedef struct {
+	char date[11];
+	char time[6];
+	int steps;
+} FITNESS_DATA;
+
+// This is your helper function. Do not change it in any way.
+// Inputs: character array representing a row; the delimiter character
+// Ouputs: date character array; time character array; steps character array
 
 // Complete the main function
 int main() {
