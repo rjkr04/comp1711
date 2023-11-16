@@ -19,4 +19,6 @@ int main() {
     avg = total / count;
     printf("Total: %.1lf Average: %.2lf\n", total, avg);
     return 0;
+
+    
 }

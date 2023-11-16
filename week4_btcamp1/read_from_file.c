@@ -1,14 +1,13 @@
-#ifndef UTILS_H
-#define UTILS_H
+#include "utils.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-#endif
 
 int main() {
-    char filename [] = "data.txt";
+    printf("Input file name: ");
+    scanf("%s", filename);
     FILE *file = open_file(filename, "r");
-    int buffer_size = 2;
+    int buffer_size = 100;
     char line_buffer[buffer_size];
 
     while (fgets(line_buffer, buffer_size, file) != NULL) {

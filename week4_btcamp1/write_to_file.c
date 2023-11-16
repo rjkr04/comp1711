@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    char filename [] = "data.txt";
+    char filename[10];
+    scanf("%s", filename);
     FILE *file = fopen(filename, "w"); // or "a", "w+", "a+"
     if (file == NULL) {
-        perror("");
+        perror("s");
         return 1;
     }
 

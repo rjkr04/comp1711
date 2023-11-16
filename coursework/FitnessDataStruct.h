@@ -11,8 +11,14 @@ typedef struct {
 } FITNESS_DATA;
 
 FITNESS_DATA data_array[200];
-int buffer_size = 100;
-char line_buffer[buffer_size];
+const int buffer_size = 100;
+char line[buffer_size];
+char filename[buffer_size];
+char choice;
+int counter = 0;
+char date[11];
+char time[7];
+char steps[7];
 
 void printmenu()
 {

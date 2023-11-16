@@ -43,48 +43,35 @@ void tokeniseRecord(const char *input, const char *delimiter,
 int main() {
     printmenu();
     choice = getchar();
-
-        // this gets rid of the newline character which the user will enter
-        // as otherwise this will stay in the stdin and be read next time
         while (getchar() != '\n');
 
-
-        // switch statement to control the menu.
         switch (choice)
         {
-        // this allows for either capital or lower case
         case 'A':
         case 'a':
             counter = 0;
-            FILE *input = fopen(filename, "r");
-            while (fgets(line, buffer_size, input))
+            FILE *file = fopen(filename, "r");
+            while (fgets(line, buffer_size, file))
             {
-                // split up the line and store it in the right place
-                // using the & operator to pass in a pointer to the bloodIron so it stores it
-                tokeniseRecord(line, ",", daily_readings[counter].date, &daily_readings[counter].bloodIron);
+                tokeniseRecord(*line, ",", date, time, steps);
+                strcpy(data_array[counter].date, date);
+                strcpy(data_array[counter].time, time);
+                data_array[counter].steps = atoi(steps);
                 counter++;
             }
-            for (int i = 0; i < counter; i++)
-            {
-                printf("%s - Blood iron: %.1f\n", daily_readings[i].date, daily_readings[i].bloodIron);
-            }
-            fclose(input);
             break;
 
         case 'B':
         case 'b':
             counter = 0;
-            while (fgets(line, buffer_size, input))
+            while (fgets(line, buffer_size, file))
             {
                 // split up the line and store it in the right place
                 // using the & operator to pass in a pointer to the bloodIron so it stores it
-                tokeniseRecord(line, ",", daily_readings[counter].date, &daily_readings[counter].bloodIron);
-                mean += daily_readings[counter].bloodIron;
+                
                 counter++;
             }
-            mean /= counter;
-            printf("Your average blood iron was %.2f\n", mean);
-            fclose(input);
+            fclose(file);
             break;
 
         case 'C':
