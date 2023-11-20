@@ -44,6 +44,7 @@ int main()
 
         // this gets rid of the newline character which the user will enter
         // as otherwise this will stay in the stdin and be read next time
+        printf("%d",choice);
         while (getchar() != '\n');
 
 

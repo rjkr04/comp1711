@@ -5,7 +5,8 @@
         "utils.h": "c",
         "string.h": "c",
         "algorithm": "c",
-        "FitnessDataStruct.h": "c"
+        "FitnessDataStruct.h": "c",
+        "random": "c"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
